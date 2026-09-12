@@ -31,7 +31,7 @@ while True:
         break
     
     # Display the live feed
-    frame
+    frame = cv2.flip(frame,1)
     cv2.imshow('Webcam Feed - Press Q to quit', frame)
     
     # Check if 5 seconds have passed
