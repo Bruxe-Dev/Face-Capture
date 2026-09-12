@@ -9,7 +9,7 @@ if not os.path.exists(output_folder):
     os.makedirs(output_folder)
     print(f"Created folder: {output_folder}")
 
-cap = cv2.VideoCapture(2, cv2.CAP_DSHOW)
+cap = cv2.VideoCapture(1, cv2.CAP_DSHOW)
 
 if not cap.isOpened():
     print("Error: Could not open webcam")
@@ -31,6 +31,7 @@ while True:
         break
     
     # Display the live feed
+    frame
     cv2.imshow('Webcam Feed - Press Q to quit', frame)
     
     # Check if 5 seconds have passed
